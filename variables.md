@@ -204,3 +204,15 @@ This template keeps most reusable client data in `src/data/site.ts` and `src/dat
 - File location: `src/styles.css`
 - Where in file: Search for `:root` and the variable names `--navy`, `--blue`, `--teal`, `--pale`
 - How to change: Replace the hex values in `:root`. The entire site uses these variables, so this is the preferred re-theme location.
+
+### Branding & Media Service detail banner
+- Current value: The supplied `gallery4 (1).jpg` is stored as `service-detail-banner.jpg` and reused across every service detail page.
+- File location: `src/assets/service-detail-banner.jpg`; selected in `src/main.tsx`
+- Where in file: Search for `serviceDetailBanner` and `.service-detail-image`
+- How to change: Replace `service-detail-banner.jpg` with the preferred shared banner image, keeping the same filename and a wide landscape crop.
+
+### Branding & Media Custom website icons
+- Current value: Supplied custom JPG icons are used for all four Why Choose Us cards and all eight service cards. The crowns/bridges card uses the supplied alternate dental icon file `icon-teeth-whitening-alt.jpg` because no separate crowns/bridges-named asset was supplied.
+- File location: `src/assets/icon-*.jpg`; imports and mappings are in `src/main.tsx`
+- Where in file: Search for `whyIcons`, `serviceIcons`, and `custom-icon`
+- How to change: Replace the corresponding JPG in `src/assets` with a new icon, keeping the same filename, or update the matching import/mapping in `src/main.tsx`. Keep icons square and visually consistent for the 46px card icon size.
